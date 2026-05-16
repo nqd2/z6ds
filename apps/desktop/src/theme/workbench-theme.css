@@ -1,0 +1,83 @@
+/**
+ * z6ds workbench design tokens (dark IDE).
+ * Syntax colors for Monaco: theme/monaco-theme.ts
+ */
+
+:root,
+.theme-z6ds {
+  --z6ds-bg-canvas: #0e0e11;
+  --z6ds-bg-surface: #141518;
+  --z6ds-bg-elevated: #1a1b1f;
+  --z6ds-bg-hover: #25262c;
+
+  --z6ds-radius-sm: 4px;
+  --z6ds-radius-md: 8px;
+  --z6ds-shadow-panel: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --z6ds-border-subtle: rgba(255, 255, 255, 0.06);
+
+  --z6ds-accent: #4d8ef7;
+  --z6ds-accent-hover: #6ba0f8;
+  --z6ds-accent-muted: rgba(77, 142, 247, 0.12);
+  --z6ds-accent-border: rgba(77, 142, 247, 0.28);
+
+  --vscode-foreground: #c4c6cd;
+  --vscode-descriptionForeground: #8b8f98;
+  --vscode-focusBorder: var(--z6ds-accent);
+  --vscode-editor-background: #141518;
+  --vscode-editor-foreground: #c4c6cd;
+  --vscode-editorGroupHeader-tabsBackground: #1a1b1f;
+  --vscode-sideBar-background: #141518;
+  --vscode-sideBar-foreground: #c4c6cd;
+  --vscode-sideBarTitle-foreground: #8b8f98;
+  --vscode-panel-background: #141518;
+  --vscode-panel-border: var(--z6ds-border-subtle);
+  --vscode-tab-activeBackground: #141518;
+  --vscode-tab-activeForeground: #e8e9ec;
+  --vscode-tab-inactiveBackground: #1a1b1f;
+  --vscode-tab-inactiveForeground: #8b8f98;
+  --vscode-list-hoverBackground: rgba(37, 38, 44, 0.55);
+  --vscode-list-activeSelectionBackground: rgba(49, 50, 58, 0.75);
+  --vscode-list-focusBackground: rgba(49, 50, 58, 0.85);
+  --vscode-button-background: var(--z6ds-accent);
+  --vscode-button-foreground: #ffffff;
+  --vscode-button-hoverBackground: var(--z6ds-accent-hover);
+  --vscode-button-secondaryBackground: #2a2c31;
+  --vscode-button-secondaryForeground: #c4c6cd;
+  --vscode-statusBar-background: #0078d4;
+  --vscode-statusBar-foreground: rgba(255, 255, 255, 0.92);
+  --vscode-terminal-background: #0e0e11;
+  --vscode-terminal-foreground: #c4c6cd;
+  --vscode-editor-font-family: "JetBrains Mono", "IBM Plex Mono", "Fira Code", Consolas,
+    monospace;
+  --vscode-font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --z6ds-error: #f2556a;
+  --z6ds-warning: #e5a23c;
+  --z6ds-success: #5cb870;
+
+  --z6ds-activity-width: 44px;
+  --z6ds-activity-active: var(--z6ds-accent);
+}
+
+.workbench-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.12) transparent;
+}
+
+.workbench-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.workbench-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.workbench-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.workbench-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}

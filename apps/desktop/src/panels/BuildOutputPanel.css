@@ -1,0 +1,125 @@
+.build-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  font-size: 12px;
+  font-family: var(--vscode-font-family);
+}
+
+.build-panel-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-bottom: 1px solid #25262a;
+  flex-wrap: wrap;
+}
+
+.build-status {
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.01em;
+}
+
+.build-status-running {
+  color: var(--z6ds-warning);
+}
+
+.build-status-success {
+  color: var(--z6ds-success);
+}
+
+.build-status-failed {
+  color: var(--z6ds-error);
+}
+
+.build-summary {
+  color: var(--vscode-foreground);
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.build-panel-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.build-panel-actions button,
+.build-panel-actions select {
+  font-size: 11px;
+  font-family: var(--vscode-font-family);
+  background: var(--vscode-button-secondaryBackground);
+  color: var(--vscode-button-secondaryForeground);
+  border: none;
+  border-radius: var(--z6ds-radius-sm);
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.build-panel-actions button:hover {
+  background: #4e5153;
+}
+
+.build-scroll-lock {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--vscode-descriptionForeground);
+}
+
+.build-diagnostics {
+  list-style: none;
+  margin: 0;
+  padding: 4px 10px;
+  max-height: 120px;
+  overflow-y: auto;
+  border-bottom: 1px solid #25262a;
+}
+
+.build-diagnostics button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  padding: 3px 6px;
+  margin: 1px 0;
+  border-radius: var(--z6ds-radius-sm);
+  font-family: var(--vscode-editor-font-family);
+  font-size: 11px;
+  width: 100%;
+  transition: background 0.15s ease;
+}
+
+.build-diagnostics button:hover {
+  background: var(--vscode-list-hoverBackground);
+}
+
+.diag-error {
+  color: var(--z6ds-error);
+}
+
+.diag-warning {
+  color: var(--z6ds-warning);
+}
+
+.build-log {
+  flex: 1;
+  margin: 0;
+  padding: 8px 10px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: var(--vscode-editor-font-family);
+  font-size: 12px;
+  line-height: 1.6;
+  background: var(--vscode-terminal-background);
+  color: var(--vscode-terminal-foreground);
+}

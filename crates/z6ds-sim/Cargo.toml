@@ -1,0 +1,21 @@
+[package]
+name = "z6ds-sim"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "M08 simulator session + M09 Renode emulation engine + M11 peripherals"
+
+[dependencies]
+z6ds-core = { path = "../z6ds-core" }
+z6ds-uart = { path = "../z6ds-uart" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+tokio = { workspace = true, features = ["net", "rt", "rt-multi-thread", "macros", "time", "sync"] }
+uuid = { workspace = true }
+base64 = { workspace = true }
+regex = "1"
+
+[dev-dependencies]
+tempfile = "3"

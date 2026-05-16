@@ -1,0 +1,62 @@
+.editor-host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  background: var(--vscode-editor-background);
+}
+
+.editor-tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 0 6px;
+  min-height: 32px;
+  align-items: flex-end;
+  background: var(--vscode-editorGroupHeader-tabsBackground);
+  border-bottom: 1px solid var(--z6ds-border-subtle);
+}
+
+.editor-tabs::-webkit-scrollbar {
+  height: 4px;
+}
+
+.editor-tab {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-family: var(--vscode-font-family);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  color: var(--vscode-tab-inactiveForeground);
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.editor-tab:hover {
+  color: var(--vscode-tab-activeForeground);
+}
+
+.editor-tab.active {
+  color: var(--vscode-tab-activeForeground);
+  border-bottom-color: var(--z6ds-accent);
+}
+
+.editor-body {
+  flex: 1;
+  min-height: 0;
+}
+
+.editor-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--vscode-descriptionForeground);
+  font-size: 12px;
+  font-family: var(--vscode-font-family);
+}

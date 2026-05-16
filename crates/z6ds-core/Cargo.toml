@@ -1,0 +1,15 @@
+[package]
+name = "z6ds-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "z6ds contracts, event bus (M00), IOC parser (M04)"
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+
+[dev-dependencies]
+tempfile = "3"

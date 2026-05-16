@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "coordinateNotes": {
+    "blenderUnits": "1 BU = 1 meter",
+    "blenderUpAxis": "Z",
+    "pinLocalPlusZ": "Points out of PCB top (pin tip direction)",
+    "threeJsNote": "glTF export applies axis conversion; read transforms from loaded scene graph."
+  },
+  "pcbRootName": "PCB_Root",
+  "anchors": [
+    {
+      "name": "PIN_3V3",
+      "netId": "3V3",
+      "parent": "PCB_Root",
+      "positionLocal": [
+        0.18997,
+        0.137074,
+        0.002
+      ],
+      "quaternionLocal": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "PIN_GND",
+      "netId": "GND",
+      "parent": "PCB_Root",
+      "positionLocal": [
+        0.113982,
+        0.137074,
+        0.002
+      ],
+      "quaternionLocal": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "PIN_PA0",
+      "netId": "PA0",
+      "parent": "PCB_Root",
+      "positionLocal": [
+        1.177816,
+        0.514026,
+        0.002
+      ],
+      "quaternionLocal": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "PIN_PA10",
+      "netId": "PA10",
+      "parent": "PCB_Root",
+      "positionLocal": [
+        1.196813,
+        1.005206,
+        0.002
+      ],
+      "quaternionLocal": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "PIN_PA9",
+      "netId": "PA9",
+      "parent": "PCB_Root",
+      "positionLocal": [
+        1.101828,
+        1.005206,
+        0.002
+      ],
+      "quaternionLocal": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "PIN_PD14",
+      "netId": "PD14",
+      "parent": "PCB_Root",
+      "positionLocal": [
+        0.759881,
+        0.114228,
+        0.002
+      ],
+      "quaternionLocal": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "PIN_PD15",
+      "netId": "PD15",
+      "parent": "PCB_Root",
+      "positionLocal": [
+        0.873863,
+        0.114228,
+        0.002
+      ],
+      "quaternionLocal": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "PIN_PG13",
+      "netId": "PG13",
+      "parent": "PCB_Root",
+      "positionLocal": [
+        0.265958,
+        0.628254,
+        0.002
+      ],
+      "quaternionLocal": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "PIN_PG14",
+      "netId": "PG14",
+      "parent": "PCB_Root",
+      "positionLocal": [
+        0.379941,
+        0.628254,
+        0.002
+      ],
+      "quaternionLocal": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ]
+}
